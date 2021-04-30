@@ -21,6 +21,19 @@ struct LinkedList {
   void insert(int data);
 };
 
+struct Stack {
+  // Member Variablen
+  int _size = 0;
+  listElement * _head = nullptr;
+
+  // Methoden
+  void push();
+  void pop();
+  void top();
+  void size();
+  void print();
+};
+
 int main() {
   std::cout << "helloWorld\n";
   listElement el(2);
