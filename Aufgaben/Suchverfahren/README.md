@@ -1,11 +1,11 @@
 # Aufgaben zu Suchverfahren
 
 ## Aufgabe: Suche implementieren
-Ziel der Aufgaben ist es, eine Reihe von Suchfunktionen bereitzustellen, die ähnlich wie die Funktionen `LOOKUP` und `VLOOKUP` in excel in Tabellenartigen Strukturen suchen können.
+Ziel der Aufgaben ist es, eine Reihe von Suchfunktionen bereitzustellen, die ähnlich wie die Funktionen `LOOKUP` und `VLOOKUP` in Excel in Tabellenartigen Strukturen suchen können.
 
 ### Lineare Suche
 
-- Schreiben Sie eine Funktion `lookup()`, die eine Zahl und eine Liste von Zahlen erwartet. Die Funktion soll die Position der Zahl in der Liste suchen und zurückliefern. Ist die Liste nicht enthalten, soll `-1` geliefert werden.
+- Schreiben Sie eine Funktion `lookup()`, die eine Zahl und eine Liste von Zahlen erwartet. Die Funktion soll die Position der Zahl in der Liste suchen und zurückliefern. Ist die Zahl nicht in der Liste enthalten, soll `-1` geliefert werden.
 
 - Überladen Sie Ihre `lookup()`-Funktion, so dass sie auch in Listen von Strings und weiteren Elementtypen suchen kann.
   - Versuchen Sie, die Funktion so weit wie möglich zu verallgemeinern.
