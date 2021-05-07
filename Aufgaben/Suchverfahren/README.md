@@ -1,7 +1,7 @@
 # Aufgaben zu Suchverfahren
 
 ## Aufgabe: Suche implementieren
-Ziel der Aufgaben ist es, eine Reihe von Suchfunktionen bereitzustellen, die ähnlich wie die Funktionen `LOOKUP` und `VLOOKUP` in Excel in Tabellenartigen Strukturen suchen können.
+Ziel der Aufgaben ist es, eine Reihe von Suchfunktionen bereitzustellen, die ähnlich wie die Funktionen `LOOKUP` und `VLOOKUP` in Excel in tabellenartigen Strukturen suchen können.
 
 ### Lineare Suche
 
