@@ -9,7 +9,7 @@ Ziel der Aufgaben ist es, eine Reihe von Suchfunktionen bereitzustellen, die äh
 
 - Überladen Sie Ihre `lookup()`-Funktion, so dass sie auch in Listen von Strings und weiteren Elementtypen suchen kann.
   - Versuchen Sie, die Funktion so weit wie möglich zu verallgemeinern.
-  Schreiben Sie ggf. eine Template-Funktion.
+  Schreiben Sie ggf. eine *Template*-Funktion.
 
 - Überladen Sie die Funktion, so dass sie zwei Listen erwartet, in der einen sucht und das entsprechende Ergebnis aus der anderen liefert.
 
@@ -24,5 +24,5 @@ alle Listen- und Element-Datentypen verwendet werden können.
 - **Hinweis**: Schauen Sie sich dafür *Lambdas* und *Iteratoren* an. 
 
 
-#### Binäre Suche
+### Binäre Suche
 - Erweitern Sie die Suchfunktionen, so dass man angeben kann, ob die Suchliste sortiert ist. Ist sie sortiert, soll eine binäre Suche statt der linearen durchgeführt werden.
