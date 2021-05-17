@@ -1,7 +1,7 @@
 CC := g++
 CFLAGS := -Wall -g -std=c++17
 TARGET := todaysClass.out
-SRC_DIR := ./Vorlesungsmaterial/21-04-26
+SRC_DIR := ./Vorlesungsmaterial/21-05-17
 OBJ_DIR := $(SRC_DIR)
 
 SRCS := $(wildcard $(SRC_DIR)/*.cpp)

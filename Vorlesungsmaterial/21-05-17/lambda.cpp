@@ -1,0 +1,48 @@
+#include <algorithm>
+#include <cmath>
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <vector>
+#include "lambda.hpp"
+
+using namespace std;
+
+bool lessLength(const string& f, const string& s){
+  return f.length() < s.length();
+}
+
+void lambda(){
+
+  vector<string> myStrVec= {"12345","123456","1234","1","12","123","12345"};
+
+  cout << "\n";
+
+  sort(myStrVec.begin(),myStrVec.end(),lessLength);
+  for (auto v: myStrVec) cout << v << " ";
+  cout << "\n";
+
+  sort(myStrVec.begin(),myStrVec.end(),[](const string& f,const string& s){return f.length() > s.length();});
+  for (auto v: myStrVec) cout << v << " ";
+  cout << "\n";
+
+  // for_each läuft durch alle Elemte der Iteratoren und wendet die Funktion auf jedes Element an
+  for_each(myStrVec.begin(), myStrVec.end(),[](const string& s){cout << s << ",";});
+
+  cout << "\n\n";
+
+  vector<int> myVec1{1,2,3,4,5,6,7,8,9,10};
+  cout << "i->i*i: ";
+  for_each(myVec1.begin(),myVec1.end(),[](int& i){i=i*i;});
+  for (auto v: myVec1) cout << v << " ";
+
+  cout << endl;
+
+  vector<double> myVec2{1,2,3,4,5,6,7,8,9,10};
+  for_each(myVec2.begin(),myVec2.end(),[](double& i){i=sqrt(i);});
+  cout << "i->sqrt(i): ";
+  for (auto v: myVec2) cout << fixed << setprecision(2) << v << " ";    // fixed verhindert exponentialschreibweise (z.B. 1.0e-10)
+                                                                        // Nachkommastellen auf 2 begrenzt mit setprecision
+  cout << "\n\n";
+
+}
