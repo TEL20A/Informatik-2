@@ -25,13 +25,18 @@ void lambda()
       cout << v << " ";
    cout << "\n";
 
+   sort(myStrVec.begin(), myStrVec.end(), [](const string &f, const string &s) { return f.length() < s.length(); });
+   for (auto v : myStrVec)
+      cout << v << " ";
+   cout << "\n";
+
    sort(myStrVec.begin(), myStrVec.end(), [](const string &f, const string &s) { return f.length() > s.length(); });
    for (auto v : myStrVec)
       cout << v << " ";
    cout << "\n";
 
-   // for_each läuft durch alle Elemte der Iteratoren und wendet die Funktion auf jedes Element an
-   for_each(myStrVec.begin(), myStrVec.end(), [](const string &s) { cout << s << ","; });
+   // for_each läuft durch alle Elemte des Vektors und wendet die Funktion auf jedes Element an
+   for_each(myStrVec.begin(), myStrVec.end(), [](const string &s) { cout << s << ", "; });
 
    cout << "\n\n";
 
@@ -63,6 +68,19 @@ void lambda_captures()
    copy = "changed";
    ref = "changed";
    lambda();
+   
+   copy = "changed again";
+   ref = "changed again";
+   lambda();
 
    cout << endl;
+}
+
+
+void lambda_params() {
+  auto addTwoNumbers = [](int a, int b){ return a + b; };
+
+  cout << endl;
+  cout << "addTwoNumbers(2000, 17): " << addTwoNumbers(2000, 17) << endl;
+  cout << "addTwoNumbers(2000, 21): " << addTwoNumbers(2000, 21) << endl;
 }

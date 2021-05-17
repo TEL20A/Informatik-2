@@ -2,9 +2,20 @@
 #include "lambda.hpp"
 #include "io.hpp"
 
+using namespace std;
+
 int main() {
-   std::cout << "Lambda\n";
+   cout << "Lambda\n";
    lambda();
 
-   write_file();
+   cout << "\nLambda captures\n";
+   lambda_captures();
+
+   cout << "\nLambda params\n";
+   lambda_params();
+  //  write_file();
 }
+
+
+
+
