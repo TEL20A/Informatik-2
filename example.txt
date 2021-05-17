@@ -1,0 +1,4 @@
+Schreibe eine Zeile in die Datei
+Schreibe eine zweite Zeile in die Datei
+Schreibe dritte Zeile in die Datei
+asdfasdfasdf

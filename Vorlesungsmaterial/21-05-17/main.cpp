@@ -5,15 +5,19 @@
 using namespace std;
 
 int main() {
-   cout << "Lambda\n";
-   lambda();
+  //  cout << "Lambda\n";
+  //  lambda();
 
-   cout << "\nLambda captures\n";
-   lambda_captures();
+  //  cout << "\nLambda captures\n";
+  //  lambda_captures();
 
-   cout << "\nLambda params\n";
-   lambda_params();
-  //  write_file();
+  //  cout << "\nLambda params\n";
+  //  lambda_params();
+
+
+  // write_file();
+
+  read_file();
 }
 
 
