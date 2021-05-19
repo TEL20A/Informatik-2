@@ -18,6 +18,9 @@ int main() {
   // write_file();
 
   read_file();
+
+  cout << "csv mit Aktienkurs einlesen\n";
+  read_stock();
 }
 
 
