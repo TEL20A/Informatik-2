@@ -41,8 +41,10 @@ void read_file() {
 
 vector<string> split (string zeile, char delimiter = ';') {
   // Eine Möglichkeit ist es den string zu durchlaufen und nach dem delimiter
-  // zu suchen und dann bis zu der Stelle den substring zu kopieren
+  // zu suchen und dann bis zu der Stelle den substring in einem vector zu kopieren
 
+  // Eine Weitere Möglichkeit ist das Nutzen der getline Funktionen wie beim einlesen der filestreams
+  // Dazu benutzt die stringstream Klasse indem man den string umwandelt und dann auf den stringstream die getline Funktion anwendet
   stringstream ss(zeile);
   vector<string> columns;
   string col;
