@@ -1,7 +1,7 @@
 # Labor 21.05.21
 
 ## Aufgabe
-- Einlesen einer CSV-Datei (separiert z.B. per `;`, `,`, ` ` ) mit beliebigen String einträgen
+- Einlesen einer CSV-Datei (separiert z.B. per `;`, `,`, ` ` ) mit beliebigen String einträgen adfasdfasdf
 - Sortieren / filtern der Einträge von bestimmten Spalten
   - Dazu ist es eventuell notwendig in Strings gedpeicherte Zahlen z.b. in `int` oder `double` umzuwandeln
   - **Wichtig: Der Filter- oder Sortiervorgang bezieht sich immer auf eine Spalte. Daher muss daran gedacht werden die anderen Spalten der Reihe an die Sortierung anzupassen damit das gesamte Dokument richtig sortiert wird.**
