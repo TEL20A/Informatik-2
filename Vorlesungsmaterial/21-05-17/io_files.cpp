@@ -2,6 +2,8 @@
 #include <fstream>
 #include <iostream>
 #include <iostream>
+#include <vector>
+#include <sstream>
 
 using namespace std;
 
@@ -32,6 +34,44 @@ void read_file() {
   if(myFile.is_open()) {
     while (getline(myFile, line)) { // lese solange von der Datei bis das Ende erreicht ist
       cout << line << endl;
+    }
+  }
+  else cout << "Unable to open file\n";
+}
+
+vector<string> split (string zeile, char delimiter = ';') {
+  // Eine Möglichkeit ist es den string zu durchlaufen und nach dem delimiter
+  // zu suchen und dann bis zu der Stelle den substring in einem vector zu kopieren
+
+  // Eine Weitere Möglichkeit ist das Nutzen der getline Funktionen wie beim einlesen der filestreams
+  // Dazu benutzt die stringstream Klasse indem man den string umwandelt und dann auf den stringstream die getline Funktion anwendet
+  stringstream ss(zeile);
+  vector<string> columns;
+  string col;
+  while(getline(ss, col, delimiter)) {
+    columns.push_back(col);
+  }
+
+  return columns;
+}
+
+void read_stock() {
+  ifstream myFile("Vorlesungsmaterial/21-05-17/wkn_716460_historic.csv");
+  string line;
+  vector<vector<string>> csv_datei;
+  if(myFile.is_open()) {
+    while (getline(myFile, line)) { // lese solange von der Datei bis das Ende erreicht ist
+      // cout << line << endl;
+      csv_datei.push_back(split(line, ';'));
+    }
+
+    for (int i_zeile=0; i_zeile < 5; i_zeile++) { // durchlaufe zeilen
+      //durchlaufen die spalten
+      cout << "Zeile " << i_zeile << " = ";
+      for (auto el: csv_datei[i_zeile]) {
+        cout << el << " : ";
+      }
+      cout << endl;
     }
   }
   else cout << "Unable to open file\n";
