@@ -20,3 +20,4 @@
 ## Nützliche Links
 
 - [fstream cplusplus.com](https://www.cplusplus.com/reference/fstream/fstream/)
+- Konvertieren von string nach double --> [`stod`](https://www.cplusplus.com/reference/string/stod/)
