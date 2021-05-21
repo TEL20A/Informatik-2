@@ -5,7 +5,8 @@
 - Sortieren / filtern der Einträge von bestimmten Spalten
   - Dazu ist es eventuel notwendig in Strings gedpeicherte Zahlen z.b. in `int` oder `double` umzuwandeln
 - In ein sortiertes CSV zurückschreiben
-- Zustzfunktionen wenn Zeit dafür ist
+- Zusatzfunktionen wenn Zeit dafür ist:
+  - Ausgeben der Datei als Markdown oder Html 
 
 ## Durchführung
 - Zusammenarbeit in Gruppen mit 3-4 Personen
