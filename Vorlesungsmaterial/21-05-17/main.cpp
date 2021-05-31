@@ -21,8 +21,6 @@ int main() {
 
   cout << "csv mit Aktienkurs einlesen\n";
   read_stock();
+
+  return EXIT_SUCCESS;
 }
-
-
-
-
