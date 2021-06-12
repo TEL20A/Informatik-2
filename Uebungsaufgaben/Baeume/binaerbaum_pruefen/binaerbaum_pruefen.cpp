@@ -6,8 +6,8 @@
 using namespace std;
 
 /*** AUFGABENSTELLUNG:
- * In der Header-Datei `baum.h` ist eine einfache Element-Datenstruktur mit einer
- * `empty()`-Funktion vorgegeben, wie sie in der Vorlesung behandelt wurde.
+ * In der Header-Datei `baum.h` ist eine einfache Element-Datenstruktur
+ * vorgegeben, wie sie in der Vorlesung behandelt wurde.
  * 
  * Schreiben Sie eine Funktion `isBinSearchTree()`.
  * Die Funktion soll einen Element-Pointer erwarten und `true` zurückgeben,
