@@ -48,5 +48,5 @@ als seine Kinder. Ist er kleiner, soll er mit dem größeren seiner Kinder verta
 werden.
 
 ### `void bubble_up(vector<int> &)`
-Diese Funktion soll den letzten Knoten nach unten aufsteigen lassen, solange er größer
-ist, als seine Kinder.
+Diese Funktion soll den letzten Knoten nach oben aufsteigen lassen, solange er größer
+ist, als sein Elternknoten.
