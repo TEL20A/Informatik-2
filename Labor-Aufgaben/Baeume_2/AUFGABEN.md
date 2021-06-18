@@ -42,6 +42,19 @@ Diese Funktion soll den Knoten an Stelle `pos` mit seinem rechten Kind vertausch
 
 ### Heaps
 
+Ein *Max-Heap* ist ein vollständiger Binärbaum, bei dem jedes Element größer ist als
+seine Kinder. Zwischen den Elementen auf einer Ebene gibt es keine definierte
+Reihenfolge.
+
+Heaps können aufgrund ihrer Vollständigkeit gut in Listen gespeichert werden.
+
+Ein neues Element fügt man ein, indem man es erstmal ans Ende hängt und dann aufsteigen
+lässt, bis es in die Heap-Struktur passt.
+
+Die Wurzel kann gelöscht werden, indem sie zuerst mit dem letzten Element vertauscht
+wird, so dass dieses Element zur neuen Wurzel wird. Anschließend muss die neue Wurzel
+absinken, bis sie in die Heap-Struktur passt.
+
 ### `void bubble_down(vector<int> &)`
 Diese Funktion soll den Wurzelknoten nach unten absinken lassen, solange er kleiner ist,
 als seine Kinder. Ist er kleiner, soll er mit dem größeren seiner Kinder vertauscht
