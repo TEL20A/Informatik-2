@@ -3,7 +3,7 @@
 Implementierung einer Struktur für ein Soziales Netzwerk basierend auf dem [Code der letzten Vorlesung](https://github.com/TEL20A/Informatik-2/blob/main/Vorlesungsmaterial/21-06-21/socialNet.cpp):
 - `addFriend` vom `struct User` implementieren
 - Im `struct SocialNet` sollten mindestens folgende Methoden funktionieren (es können aber noch weiter hinzugefügt werden):
-  - `getUserByStudy`
+  - `vector<User*> getUserByStudy(string studienGang)`: Diese Methode soll einen Vector mit Usern zurückliefern die `string studiengang` enthalten
   - `void addUser(string name, unsigned short alter, string studienGang)`, um den User direkt durch Aufruf der Methode zu erstellen und hinzuzufügen
   - `unsigned int getUserNumber()`: Methode welche die Anzahl der Nutzer zurück gibt.
   - `User* getUserByName(string name)`: Methode soll Pointer auf den User mit Namen `string name` zurück geben.
