@@ -61,6 +61,14 @@ struct SocialNet {
     
   }
 
+  User* getUserByName(string name) {
+
+  }
+
+  unsigned int getUserNumber() {
+    
+  }
+
 };
 
 int main() {
