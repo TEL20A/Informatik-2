@@ -38,15 +38,15 @@ struct User {
 };
 
 struct SocialNet {
-  vector<User*> _user;
-  unsigned long _numConnections;
+  vector<User*> _users;  // Liste der Nutzer im Netzwerk
+  unsigned long _numConnections;  // Anzahl der Freundschaften
   // map<string, vector<User*>> studienGang;
 
   void addUser(string name, unsigned short alter, string studienGang) {
 
   }
   void addUser(User* user) {
-    _user.push_back(user);
+    _users.push_back(user);
   }
   vector<User*> getUserByStudy(string studienGang) {
 
@@ -55,6 +55,10 @@ struct SocialNet {
     user1->addFriend(user2);
     user2->addFriend(user1);
     _numConnections++;
+  }
+
+  void printNetwork() {
+    
   }
 
 };

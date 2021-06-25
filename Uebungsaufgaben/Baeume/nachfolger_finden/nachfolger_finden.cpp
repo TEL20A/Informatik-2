@@ -23,7 +23,6 @@ using namespace std;
 /*** LOESUNG: ***/
 Element * Element::successor(int key_) {
     // [TODO]
-    return nullptr;
 }
 
 /*** TESTCODE: ***/
