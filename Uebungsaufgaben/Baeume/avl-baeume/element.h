@@ -36,9 +36,9 @@ struct Element {
  * aufgerufen werden. D.h. jedes Elternteil entscheidet am Ende eines `insert()`,
  * ob durch eines seiner Kinder rotiert werden muss.
  */ 
-Element * rotateLeft();
-Element * rotateRight();
-Element * rotateLeftRight();
-Element * rotateRightLeft();
+Element * rotateLeft(Element * root);
+Element * rotateRight(Element * root);
+Element * rotateLeftRight(Element * root);
+Element * rotateRightLeft(Element * root);
 
 #endif

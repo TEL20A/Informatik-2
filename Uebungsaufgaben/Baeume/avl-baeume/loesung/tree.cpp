@@ -7,6 +7,7 @@ Tree::Tree() : root{new Element()} {}
 
 void Tree::insert(int key) {
   root->insert(key);
+  root = rotate(root);
 }
 
 string Tree::inOrderValues() {
