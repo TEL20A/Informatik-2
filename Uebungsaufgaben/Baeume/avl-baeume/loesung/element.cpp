@@ -18,7 +18,7 @@ void Element::set(int key_) {
 }
 
 void Element::insert(int key_) {
-  if (empty()) { set(key); return; }
+  if (empty()) { set(key_); return; }
   if (key_ < key) {
     left->insert(key_);
   }
