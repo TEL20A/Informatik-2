@@ -62,16 +62,28 @@ Geben Sie die Liste nach jedem Durchlauf der inneren Schleife an.
 Markieren Sie dabei jeweils, welcher Teil schon als sortiert bekannt ist und welcher noch nicht.
 
 - Lösung:
-  
+
   * ` | 40 35 89 2 55 3 23 `
-  * ` 2 | 40 35 89 55 3 23 `
-  * ` 2 3 | 40 35 89 55 23 `
-  * ` 2 3 23 | 40 35 89 55 `
-  * ` 2 3 23 35 | 40 89 55 `
-  * ` 2 3 23 35 40 | 89 55 `
-  * ` 2 3 23 35 40  55 89 | `
+  * ` 2 | 35 89 40 55 3 23 `
+  * ` 2 3 | 89 40 55 35 23 `
+  * ` 2 3 23 | 40 55 35 89 `
+  * ` 2 3 23 35 | 55 40 89 `
+  * ` 2 3 23 35 40 | 55 89 `
+  * ` 2 3 23 35 40 55 89 | `
 
 
+- Alternativlösung:
+* ` | 40 35 89 2 55 3 23 `
+* ` 2 | 40 35 89 55 3 23 `
+* ` 2 3 | 40 35 89 55 23 `
+* ` 2 3 23 | 40 35 89 55 `
+* ` 2 3 23 35 | 40 89 55 `
+* ` 2 3 23 35 40 | 89 55 `
+* ` 2 3 23 35 40  55 89 | `
+
+Diese Lösung stand zuerst hier.
+Sie ist auch korrekt, führt aber keine Vertauschungen aus, sondern fügt das jeweils nächste Element einfach nur vorne ein und löscht es hinten.
+So würde das Verfahren z.B. ablaufen, wenn man nicht in der ursprünglichen Liste arbeitet, sondern eine neue sortierte Liste aufbaut.
 
 
 ## Sortieren
