@@ -18,7 +18,7 @@ Zeichnen Sie den Baum vor und nach jeder Rotation.
        https://dreampuf.github.io/GraphvizOnline/#graph%20G%20%7B%0A%20%20%20%2012%20--%202%0A%20%20%20%2012%20--%2057%0A%20%20%20%2057%20--%2055%0A%20%20%20%2057%20--%20180%0A%7D)
   5. [Baum nach Einfügen von `13`](
         https://dreampuf.github.io/GraphvizOnline/#graph%20G%20%7B%0A%20%20%20%2012%20--%202%0A%20%20%20%2012%20--%2057%0A%20%20%20%2057%20--%2055%0A%20%20%20%2057%20--%20180%0A%20%20%20%2055%20--%2013%0A%20%20%20%2055%20--%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%20%0A%20%20%20%20D1%5Bstyle%3Dinvis%5D%0A%7D)
-  6. [Baum nach Rechts-Links-Rotation um `12`](
+  6. [Baum nach Links-Rechts-Rotation um `12`](
       https://dreampuf.github.io/GraphvizOnline/#graph%20G%20%7B%0A%20%20%20%2055%20--%2012%0A%20%20%20%2012%20--%202%0A%20%20%20%2012%20--%2013%0A%20%20%20%2055%20--%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%2055%20--%2057%0A%20%20%20%2057%20--%20D2%5Bstyle%3Dinvis%5D%0A%20%20%20%2057%20--%20180%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%20D2%5Bstyle%3Dinvis%5D%0A%7D)
 
 
