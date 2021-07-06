@@ -12,7 +12,7 @@ Zeichnen Sie den Baum vor und nach jeder Rotation.
   2. Rechtsrotation
   3. Einfügen von ` 21 19 ` und anschließend Rechts-Links-Rotation
   4. Einfügen von ` 34 ` und Linksrotation
--
+- [Link zu den Schritten](https://github.com/TEL20A/Informatik-2/blob/main/Uebungsaufgaben/Beispielklausuren/Theorie-2/AVL_Baum.pdf)
 
 
 
@@ -87,3 +87,6 @@ Im Folgenden ist für einen binären Suchbaum eine Pre-Order-Darstellung gegeben
 
 - Lösung:
   - In-Order-Darstellung: ` 7 9 15 30 32 34 36 `
+  - Aus der Pre-Order-Darstellung kann man erkennen, dass die `30`die Wurzel ist, da diese als erstes ausgegeben wird.
+  - Über die In-Order-Darstellung kann man dadurch erkennen das  ` 7 9 15 ` und ` 32 34 36 ` rechts der Wurzel stehen müssen
+  - [Der Baum](https://dreampuf.github.io/GraphvizOnline/#digraph%20BST%20%7B%0A%20%20%20%2030%20-%3E%2015%20-%3E%207%20%0A%20%20%20%2030%20-%3E%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%2015%20-%3E%20D2%5Bstyle%3Dinvis%5D%0A%20%20%20%2030%20-%3E%2036%20-%3E%2034%20-%3E32%0A%20%20%20%2036%20-%3E%20D3%5Bstyle%3Dinvis%5D%0A%20%20%20%2034%20-%3E%20D4%5Bstyle%3Dinvis%5D%0A%20%20%20%207%20-%3E%20D5%5Bstyle%3Dinvis%5D%0A%20%20%20%207%20-%3E%209%0A%20%20%20%20%0A%20%20%20%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%20D2%5Bstyle%3Dinvis%5D%0A%20%20%20%20D3%5Bstyle%3Dinvis%5D%0A%20%20%20%20D4%5Bstyle%3Dinvis%5D%0A%20%20%20%20D5%5Bstyle%3Dinvis%5D%0A%20%20%20%20%0A%7D)
