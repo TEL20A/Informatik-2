@@ -88,5 +88,7 @@ Im Folgenden ist für einen binären Suchbaum eine Pre-Order-Darstellung gegeben
 - Lösung:
   - In-Order-Darstellung: ` 7 9 15 30 32 34 36 `
   - Aus der Pre-Order-Darstellung kann man erkennen, dass die `30`die Wurzel ist, da diese als erstes ausgegeben wird.
-  - Über die In-Order-Darstellung kann man dadurch erkennen das  ` 7 9 15 ` und ` 32 34 36 ` rechts der Wurzel stehen müssen
+  - Über die In-Order-Darstellung kann man dadurch erkennen das  ` 7 9 15 ` und ` 32 34 36 ` rechts der Wurzel stehen müssen.
+  - In Per-Order gibt man zuerst die Wurzel aus und geht dann links weiter. Da die `9` größer als die `7` ist, weiß man, dass diese rechte von der `7` stehen muss. Wenn links nichts mehr kommt geht man in Pre-Order rechts weiter.
+  - Auf der rechten Seite des Baumes weiß man wieder das erst die Wurzel ausgegeben und dann links weiter gegangen wird. Da alle Zahlen kleiner werden und keine größere mehr vorkommt, weiß man, dass alle links zu Ihrer Wurzel stehen.
   - [Der Baum](https://dreampuf.github.io/GraphvizOnline/#digraph%20BST%20%7B%0A%20%20%20%2030%20-%3E%2015%20-%3E%207%20%0A%20%20%20%2030%20-%3E%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%2015%20-%3E%20D2%5Bstyle%3Dinvis%5D%0A%20%20%20%2030%20-%3E%2036%20-%3E%2034%20-%3E32%0A%20%20%20%2036%20-%3E%20D3%5Bstyle%3Dinvis%5D%0A%20%20%20%2034%20-%3E%20D4%5Bstyle%3Dinvis%5D%0A%20%20%20%207%20-%3E%20D5%5Bstyle%3Dinvis%5D%0A%20%20%20%207%20-%3E%209%0A%20%20%20%20%0A%20%20%20%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%20D2%5Bstyle%3Dinvis%5D%0A%20%20%20%20D3%5Bstyle%3Dinvis%5D%0A%20%20%20%20D4%5Bstyle%3Dinvis%5D%0A%20%20%20%20D5%5Bstyle%3Dinvis%5D%0A%20%20%20%20%0A%7D)
